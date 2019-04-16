@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="180dp"
+                android:src="@drawable/pvmodellogo"
+                android:background="#E5E9DF"/>
+
+            <TextView
+                android:id="@+id/sobreLaApp"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/editText"
+                android:textSize="14dp"
+                android:paddingHorizontal="5dp"
+                android:paddingTop="12dp"
+                android:text="  El fin de esta aplicación es didáctico, dar a los estudiantes una herramienta moderna que vaya más allá del libro, representando los gráficos de manera dinámica y en tiempo real o enlentecidos, de esta manera fomentar la participación y la
+ experimentación de manera accesible."
+                />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:id="@+id/ComoFuncionaTittle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="toggleComoFunciona">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Como funciona"
+                        android:textSize="16dp"
+                        android:paddingLeft="16dp"
+                        android:paddingVertical="12dp"
+                        android:textColor="#ed6f58"/>
+
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="?android:attr/listDivider" />
+                <TextView
+                    android:id="@+id/comoFunciona"
+                    android:text="    Detras de esta aplicación hay un corazón virtual, este late, y los cambios de presión y volumen generados en el ventrículo son desplegados en el gráfico.\n   La aplicación es una simulación matemática del corazón. La manera en que esto se lleva a cabo es utilizando la homología entre las propiedades eléctricas e hidráulicas. De esta manera, podemos ver el sistema cardio-vascular como si fuera un circuito eléctrico simplificado,
+ esto nos permite calcular con mayor facilidad el comportamiento del sistema"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingHorizontal="10dp"
+                    android:textSize="14dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:id="@+id/cicloCardiacoTittle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="toggleCicloCardiaco">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Ciclo cardiaco"
+                        android:textSize="16dp"
+                        android:paddingLeft="16dp"
+                        android:paddingVertical="12dp"
+                        android:textColor="#ed6f58"/>
+
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="?android:attr/listDivider" />
+                <TextView
+                    android:id="@+id/cicloCardiaco"
+                    android:text="    Es la serie de fenomenos electricos, mecanicos y sonoros que ocurren entre un latido y otro. Se divide en dos partes, la primera fase el ventriculo se relaja y es segudio por su llenado, esta fase lleva el nombre de diastole. Esta primera etapa es segudida por la sistole, que consiste primero en una contraccion isovlumetrica y continua con una fase de eyeccion.  "
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingHorizontal="10dp"
+                    android:textSize="14dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:id="@+id/variablesTittle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="toggleVariables">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Variables"
+                        android:textSize="16dp"
+                        android:paddingLeft="16dp"
+                        android:paddingVertical="12dp"
+                        android:textColor="#ed6f58"/>
+
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="?android:attr/listDivider" />
+                <TextView
+                    android:id="@+id/variables"
+                    android:text="\n-Precarga: tension parietal maxima durante la diastoles \n-Poscarga: tension parietal maxima durante la sistole \n-Contractilidad propiedad intrinseca del corazon de variar la fuerza de contraction independientemente de las condiciones de carga."
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingHorizontal="10dp"
+                    android:textSize="14dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:id="@+id/exerciciosTittle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="toggleExercicios">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Exercicios"
+                        android:textSize="16dp"
+                        android:paddingLeft="16dp"
+                        android:paddingVertical="12dp"
+                        android:textColor="#ed6f58"/>
+
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="?android:attr/listDivider" />
+                <TextView
+                    android:id="@+id/exercicios"
+                    android:text=""
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingHorizontal="10dp"
+                    android:textSize="14dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
